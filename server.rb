@@ -13,3 +13,11 @@ get '/about_me' do
   @interests = ["music", "Moya", "coding", "Phish", "also Phish"]
   erb(:about_me)
 end
+
+get '/favourites' do
+  @fav_links = [
+    "http://www.phish.com",
+    "http://www.phish.net"
+  ]
+  erb(:favourites)
+end
