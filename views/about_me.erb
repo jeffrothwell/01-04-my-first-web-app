@@ -6,5 +6,17 @@
   </head>
   <body>
     <h1>My name is Jeff. Some people think I'm alright</h1>
+    <h2>My skills are:</h2>
+    <ul>
+      <% @skills.each do |skill| -%>
+      <li> <%= skill %> </li>
+      <% end -%>
+    </ul>
+    <h2>My interests are:</h2>
+    <ul>
+      <% @interests.each do |interest| -%>
+      <li> <%= interest %> </li>
+      <% end -%>
+    </ul>
   </body>
 </html>
